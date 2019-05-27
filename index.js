@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Hello name={this.state.name} />
+        <ButtonPage />
         <p>
           Start editing to see some magic happen :)
         </p>
@@ -24,3 +24,4 @@ class App extends Component {
 }
 
 render(<App />, document.getElementById('root'));
+/***<Hello name={this.state.name} />****/
