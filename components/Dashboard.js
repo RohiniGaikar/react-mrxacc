@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { MDBBtn } from "mdbreact";
+import BarChart from './BarChart';
+import DropdownPage from './DropdownPage';
 
-const ButtonPage = () => {
+const Dashboard = () => {
   return (
-    <Fragment>
-      <MDBBtn color="primary">Primary</MDBBtn>
-      <MDBBtn>Default</MDBBtn>
-      <MDBBtn color="secondary">Secondary</MDBBtn>
-      <MDBBtn color="success">Success</MDBBtn>
-      <MDBBtn color="info">Info</MDBBtn>
-      <MDBBtn color="warning">Warning</MDBBtn>
-      <MDBBtn color="danger">Danger</MDBBtn>
-    </Fragment>
-  );
+    <div>
+        <BarChart />
+        <h5>Choose a Dimension</h5>
+        <DropdownPage />
+    </div>
+      );
 }
 
-export default ButtonPage;
+export default Dashboard;
