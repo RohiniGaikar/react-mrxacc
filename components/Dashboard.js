@@ -5,6 +5,8 @@ import BarChart from './BarChart';
 import DropdownPage from './DropdownPage';
 import Measurement from './Measurement';
 import CountryRecordsChart from './CountryRecordsChart';
+import RegionRecords from './RegionRecords';
+import ContactTable from './ContactTable';
 
 const Dashboard = () => {
   return (
@@ -14,6 +16,8 @@ const Dashboard = () => {
         <DropdownPage />
         <Measurement />
         <CountryRecordsChart />
+        <RegionRecords />
+        <ContactTable />
     </div>
       );
 }
