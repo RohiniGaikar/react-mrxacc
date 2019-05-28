@@ -8,9 +8,11 @@ const DropdownPage = () => {
         MDBDropdown
       </MDBDropdownToggle>
       <MDBDropdownMenu basic>
-       <MDBDropdownItem>Action</MDBDropdownItem>
-        <MDBDropdownItem>Another Action</MDBDropdownItem>
-        <MDBDropdownItem>Something else here</MDBDropdownItem>
+       <MDBDropdownItem>US</MDBDropdownItem>
+        <MDBDropdownItem>O</MDBDropdownItem>
+        <MDBDropdownItem>No Country</MDBDropdownItem>
+        <MDBDropdownItem>CA</MDBDropdownItem>
+        <MDBDropdownItem>UK</MDBDropdownItem>
       </MDBDropdownMenu>
     </MDBDropdown>
   );
