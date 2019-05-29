@@ -8,6 +8,7 @@ import CountryRecordsChart from './CountryRecordsChart';
 import RegionRecords from './RegionRecords';
 import ContactTable from './ContactTable';
 import DoughnutChart from './DoughnutChart';
+import AllProvinceTable from './AllProvinceTable';
 
 const Dashboard = () => {
   return (
@@ -20,6 +21,7 @@ const Dashboard = () => {
         <RegionRecords />
         <ContactTable />
         <DoughnutChart />
+        <AllProvinceTable />
     </div>
       );
 }
