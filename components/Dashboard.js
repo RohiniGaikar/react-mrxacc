@@ -7,6 +7,7 @@ import Measurement from './Measurement';
 import CountryRecordsChart from './CountryRecordsChart';
 import RegionRecords from './RegionRecords';
 import ContactTable from './ContactTable';
+import DoughnutChart from './DoughnutChart';
 
 const Dashboard = () => {
   return (
@@ -18,6 +19,7 @@ const Dashboard = () => {
         <CountryRecordsChart />
         <RegionRecords />
         <ContactTable />
+        <DoughnutChart />
     </div>
       );
 }
