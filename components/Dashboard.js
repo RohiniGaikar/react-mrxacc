@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import { MDBBtn } from "mdbreact";
+import { MDBBtn, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import BarChart from './BarChart';
 import DropdownPage from './DropdownPage';
+import { Fragment} from 'react';
 import Measurement from './Measurement';
 import CountryRecordsChart from './CountryRecordsChart';
 import RegionRecords from './RegionRecords';
@@ -12,17 +13,31 @@ import AllProvinceTable from './AllProvinceTable';
 
 const Dashboard = () => {
   return (
-    <div>
+    <Fragment>
         <BarChart />
+       
         <h5>Choose a Dimension:</h5>
         <DropdownPage />
         <Measurement />
+        
+      
+  
+    
+       
         <CountryRecordsChart />
+    
+    
+    
         <RegionRecords />
+    
+    
+    
         <ContactTable />
         <DoughnutChart />
         <AllProvinceTable />
-    </div>
+        
+   </Fragment>
+   
       );
 }
 

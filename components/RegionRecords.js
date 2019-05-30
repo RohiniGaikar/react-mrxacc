@@ -94,7 +94,7 @@ class RegionRecords extends React.Component {
       <MDBContainer>
         <h5 className="mt-5">Records Over Region</h5>
         <InputBox />
-        <Bar data={this.state.dataBar} options={this.state.barChartOptions} />
+        <Bar data={this.state.dataBar} options={this.state.barChartOptions} width={700} height={300} />
       </MDBContainer>
     );
   }
