@@ -13,30 +13,44 @@ import AllProvinceTable from './AllProvinceTable';
 
 const Dashboard = () => {
   return (
-    <Fragment>
-        <BarChart />
-       
+    <div>
+    <MDBContainer>
+    <MDBRow>
+    <MDBCol md="8">
+          <BarChart />
+    </MDBCol>
+    <MDBCol md="4">
         <h5>Choose a Dimension:</h5>
         <DropdownPage />
         <Measurement />
-        
-      
-  
-    
-       
+    </MDBCol>
+    </MDBRow>
+    </MDBContainer>
+
+    <MDBContainer>
+    <MDBRow>
+    <MDBCol md="6">
         <CountryRecordsChart />
-    
-    
-    
+    </MDBCol>
+    <MDBCol md="6">
         <RegionRecords />
-    
-    
-    
+    </MDBCol>
+    </MDBRow>
+    </MDBContainer>
+
+    <MDBContainer>
+    <MDBRow>
+    <MDBCol md="6">
         <ContactTable />
+    </MDBCol>
+    <MDBCol md="6">   
         <DoughnutChart />
-        <AllProvinceTable />
+    </MDBCol>
+    </MDBRow>
+    </MDBContainer>
+       // <AllProvinceTable />
         
-   </Fragment>
+   </div>
    
       );
 }
