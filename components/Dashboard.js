@@ -14,6 +14,9 @@ import AllProvinceTable from './AllProvinceTable';
 const Dashboard = () => {
   return (
     <div>
+    <MDBContainer fluid>
+  
+    </MDBContainer>
     <MDBContainer>
     <MDBRow>
     <MDBCol md="8">
@@ -48,7 +51,7 @@ const Dashboard = () => {
     </MDBCol>
     </MDBRow>
     </MDBContainer>
-       // <AllProvinceTable />
+    // <AllProvinceTable />
         
    </div>
    

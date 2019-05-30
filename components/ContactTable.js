@@ -636,7 +636,7 @@ const ContactTable = () => {
     <MDBDataTable
       bordered
       hover
-      data={data}
+      data={data} width={700} height={300}
     />
   );
 }
