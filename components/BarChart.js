@@ -1,6 +1,6 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
-import { MDBContainer } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBIcon} from "mdbreact";
 
 class BarChart extends React.Component {
   state = {
@@ -62,7 +62,14 @@ class BarChart extends React.Component {
   render() {
     return (
         <MDBContainer>
+        <MDBRow>
+        <MDBCol md="1">
         <label>Switch Bar Graph</label>
+        </MDBCol>
+        <MDBCol md="2">
+               <MDBIcon icon="sync-alt" />
+        </MDBCol>
+        </MDBRow>
         <Bar data={this.state.dataBar} options={this.state.barChartOptions} width={700} height={300}  />
         
        </MDBContainer>

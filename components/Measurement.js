@@ -12,7 +12,7 @@ const Measurement = () => {
       <label style={{
                       marginTop: "3rem"
           }}>Choose Measurement:</label><br />
-          <input  type="text" className="form-control" placeholder="Search" aria-label="Search" />
+          <input  type="text" className="form-control" placeholder="Search..." aria-label="Search" />
       <input
         type="text"
         className="form-control" />

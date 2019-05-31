@@ -18,17 +18,13 @@ const Dashboard = () => {
                 marginTop: "0.5rem",
                 marginBottom: "1.5rem"
               }}>
-    <MDBContainer fluid>
-  
-    </MDBContainer>
+    
     <MDBContainer>
     <MDBRow>
-    <MDBCol md="5">
+    <MDBCol md="8">
           <BarChart />
     </MDBCol>
-    <MDBCol md="3">
-    <MDBIcon icon="sync-alt" />
-    </MDBCol>
+    
 
     <MDBCol md="4">
         
