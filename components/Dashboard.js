@@ -21,18 +21,28 @@ const Dashboard = () => {
     
     <MDBContainer>
     <MDBRow>
-    <MDBCol md="8">
+    <MDBCol md="7">
           <BarChart />
     </MDBCol>
+    <div style={{
+                borderLeft: "1px solid #e0e0e0",
+                marginTop: "1rem",
+                marginBottom: "1rem",
+                //marginLeft: "2rem"
+              }}>
+              </div>
     
-
     <MDBCol md="4">
-        
         <DropdownPage />
         <Measurement />
     </MDBCol>
     </MDBRow>
     </MDBContainer>
+    <div style={{
+                borderTop: "1px solid #e0e0e0",
+                marginTop: "1.5rem",
+               // marginBottom: "1.5rem"
+              }} >
 
     <MDBContainer>
     <MDBRow>

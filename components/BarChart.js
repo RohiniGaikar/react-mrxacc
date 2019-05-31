@@ -63,14 +63,14 @@ class BarChart extends React.Component {
     return (
         <MDBContainer>
         <MDBRow>
-        <MDBCol md="1">
+        <MDBCol md="10">
         <label>Switch Bar Graph</label>
         </MDBCol>
         <MDBCol md="2">
                <MDBIcon icon="sync-alt" />
         </MDBCol>
         </MDBRow>
-        <Bar data={this.state.dataBar} options={this.state.barChartOptions} width={700} height={300}  />
+        <Bar data={this.state.dataBar} options={this.state.barChartOptions} width={600} height={300}  />
         
        </MDBContainer>
       
