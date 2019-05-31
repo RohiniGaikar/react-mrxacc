@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import { MDBBtn, MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import { MDBBtn, MDBContainer, MDBRow, MDBCol, MDBIcon } from "mdbreact";
 import BarChart from './BarChart';
 import DropdownPage from './DropdownPage';
 import { Fragment} from 'react';
@@ -15,7 +15,7 @@ const Dashboard = () => {
   return (
     <div style={{
                 borderTop: "1px solid #e0e0e0",
-                marginTop: "1rem",
+                marginTop: "0.5rem",
                 marginBottom: "1.5rem"
               }}>
     <MDBContainer fluid>
@@ -23,9 +23,13 @@ const Dashboard = () => {
     </MDBContainer>
     <MDBContainer>
     <MDBRow>
-    <MDBCol md="8">
+    <MDBCol md="5">
           <BarChart />
     </MDBCol>
+    <MDBCol md="3">
+    <MDBIcon icon="sync-alt" />
+    </MDBCol>
+
     <MDBCol md="4">
         
         <DropdownPage />

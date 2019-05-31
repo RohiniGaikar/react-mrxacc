@@ -62,7 +62,7 @@ class BarChart extends React.Component {
   render() {
     return (
         <MDBContainer>
-        <h5 className="mt-5">Switch Bar Graph</h5>
+        <label>Switch Bar Graph</label>
         <Bar data={this.state.dataBar} options={this.state.barChartOptions} width={700} height={300}  />
         
        </MDBContainer>
