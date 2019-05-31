@@ -3,18 +3,16 @@ import { MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from
 
 const DropdownPage = () => {
   return (
-    <MDBDropdown>
-      <MDBDropdownToggle caret color="primary">
-        MDBDropdown
-      </MDBDropdownToggle>
-      <MDBDropdownMenu basic>
-       <MDBDropdownItem>US</MDBDropdownItem>
-        <MDBDropdownItem>O</MDBDropdownItem>
-        <MDBDropdownItem>No Country</MDBDropdownItem>
-        <MDBDropdownItem>CA</MDBDropdownItem>
-        <MDBDropdownItem>UK</MDBDropdownItem>
-      </MDBDropdownMenu>
-    </MDBDropdown>
+    <div >
+        <label >Choose a Dimensions:</label>
+        <select className="browser-default custom-select">
+          <option>Choose your option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </div>
+    
   );
 }
 

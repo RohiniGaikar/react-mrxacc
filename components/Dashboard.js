@@ -13,7 +13,11 @@ import AllProvinceTable from './AllProvinceTable';
 
 const Dashboard = () => {
   return (
-    <div>
+    <div style={{
+                borderTop: "1px solid #e0e0e0",
+                marginTop: "1rem",
+                marginBottom: "1.5rem"
+              }}>
     <MDBContainer fluid>
   
     </MDBContainer>
@@ -23,7 +27,7 @@ const Dashboard = () => {
           <BarChart />
     </MDBCol>
     <MDBCol md="4">
-        <h5>Choose a Dimension:</h5>
+        
         <DropdownPage />
         <Measurement />
     </MDBCol>
