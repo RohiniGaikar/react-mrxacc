@@ -2,30 +2,33 @@ import React from 'react';
 
 const BasicContactTable = () => {
 return(
-  <div>
-  <label>Canada Contact Drilldown</label>
-<table id="dtBasicExample" class="table table-bordered" cellspacing="0" width="100%">
+<div>  
+<label>Canada Contact Drilldown</label>
+
+<div className="table-responsive table-wrapper-scroll-y my-custom-scrollbar ">
+
+  <table className="table table-bordered w-auto mb-0">
   <thead>
     <tr>
-      <th class="th-sm">Canada
+      <th className="th-sm">Canada
       </th>
-      <th class="th-sm">Region Code
+      <th className="th-sm">Region Code
       </th>
-      <th class="th-sm">Region
+      <th className="th-sm">Region
       </th>
-      <th class="th-sm">City
+      <th className="th-sm">City
       </th>
-      <th class="th-sm">Account Name
+      <th className="th-sm">Account Name
       </th>
-      <th class="th-sm">Area Code
+      <th className="th-sm">Area Code
       </th>
-      <th class="th-sm">Email
+      <th className="th-sm">Email
       </th>
-      <th class="th-sm">Name
+      <th className="th-sm">Name
       </th>
-      <th class="th-sm">Phone
+      <th className="th-sm">Phone
       </th>
-      <th class="th-sm">Title
+      <th className="th-sm">Title
       </th>
       </tr>
   </thead>
@@ -290,8 +293,10 @@ return(
  
 </table>
 </div>
+</div>
 );
 }
 
 export default BasicContactTable;
 
+/*<label>Canada Contact Drilldown</label>*/
