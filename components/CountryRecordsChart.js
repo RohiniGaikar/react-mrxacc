@@ -65,7 +65,7 @@ class CountryRecordsChart extends React.Component {
       <MDBContainer>
         <h5 className="mt-5">Records Over Country</h5>
         <InputBox />
-        <Bar data={this.state.dataBar} options={this.state.barChartOptions} width={700} height={300} />
+        <Bar data={this.state.dataBar} options={this.state.barChartOptions} width={500} height={300} />
       </MDBContainer>
     );
   }

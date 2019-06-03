@@ -43,7 +43,7 @@ const Dashboard = () => {
                 marginTop: "1.5rem",
                // marginBottom: "1.5rem"
               }} >
-
+      </div>
     <MDBContainer>
     <MDBRow>
     <MDBCol md="6">
@@ -54,9 +54,14 @@ const Dashboard = () => {
     </MDBCol>
     </MDBRow>
     </MDBContainer>
+     <div style={{
+                borderTop: "1px solid #e0e0e0",
+                marginTop: "1.5rem",
+               // marginBottom: "1.5rem"
+              }} />
 
     <MDBContainer>
-    <MDBRow>
+        <MDBRow>
     <MDBCol md="6">
         <ContactTable />
     </MDBCol>
