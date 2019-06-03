@@ -4,6 +4,7 @@ import { MDBBtn, MDBContainer, MDBRow, MDBCol, MDBIcon } from "mdbreact";
 import BarChart from './BarChart';
 import DropdownPage from './DropdownPage';
 import { Fragment} from 'react';
+import componentQueries from 'react-component-queries';
 import Measurement from './Measurement';
 import CountryRecordsChart from './CountryRecordsChart';
 import RegionRecords from './RegionRecords';
@@ -28,7 +29,7 @@ const Dashboard = () => {
     <div style={{
                 borderLeft: "1px solid #e0e0e0",
                 marginTop: "1rem",
-                marginBottom: "1rem",
+                marginBottom: "0rem",
                 
               }}>
               </div>
@@ -50,7 +51,14 @@ const Dashboard = () => {
     <MDBCol md="6">
         <CountryRecordsChart />
     </MDBCol>
-    <MDBCol md="6">
+    <div style={{
+                borderLeft: "1px solid #e0e0e0",
+                marginTop: "1rem",
+                marginBottom: "0rem",
+                
+              }}>
+              </div>
+    <MDBCol md="5">
         <RegionRecords />
     </MDBCol>
     </MDBRow>
@@ -71,33 +79,72 @@ const Dashboard = () => {
    <div style={{
                 borderTop: "1px solid #e0e0e0",
                 marginTop: "1.5rem",
-                marginBottom: "1.5rem"
+                marginBottom: "0.0rem"
                 
               }} />
     <MDBRow>
-    <MDBCol md="6"> 
+    <MDBCol md="7"> 
     </MDBCol> 
-     <MDBCol md="6">
+    <div style={{
+                borderLeft: "1px solid #e0e0e0",
+                marginTop: "1rem",
+                marginBottom: "0rem",
+                
+              }}>
+              </div>
+     <MDBCol md="4">
      <MDBRow>
         <DoughnutChart />
       </MDBRow>
       <div style={{
                 borderTop: "1px solid #e0e0e0",
                 marginTop: "1.5rem",
-               
+                marginBottom: "0rem"
                         }} />
       <MDBRow>
       <AllProvinceTable />
       </MDBRow>
     </MDBCol>
+
     </MDBRow>
- 
+    <div style={{
+                borderBottom: "1px solid #e0e0e0",
+                marginTop: "1rem",
+                marginBottom: "0rem",
+                
+              }}>
+              </div>
 
         
    </div>
    
       );
 }
+const query = ({ width }) => {
+  if (width < 575) {
+    return { breakpoint: 'xs' };
+  }
+
+  if (576 < width && width < 767) {
+    return { breakpoint: 'sm' };
+  }
+
+  if (768 < width && width < 991) {
+    return { breakpoint: 'md' };
+  }
+
+  if (992 < width && width < 1199) {
+    return { breakpoint: 'lg' };
+  }
+
+  if (width > 1200) {
+    return { breakpoint: 'xl' };
+  }
+
+  return { breakpoint: 'xs' };
+};
+
+export default componentQueries(query)(Dashboard);
 
 export default Dashboard;
 /****

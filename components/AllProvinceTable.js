@@ -86,7 +86,7 @@ const data = {
 return (
   <MDBContainer>
   <label className="mt-5"><strong>Top 10 Provinces</strong></label>
-    <MDBTable scrollY bordereddisplay="block">
+    <MDBTable scrollY bordered display="block">
       <MDBTableHead columns={data.columns} />
       <MDBTableBody rows={data.rows} />
     </MDBTable>
