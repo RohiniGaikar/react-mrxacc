@@ -7,7 +7,8 @@ import { Fragment} from 'react';
 import Measurement from './Measurement';
 import CountryRecordsChart from './CountryRecordsChart';
 import RegionRecords from './RegionRecords';
-import ContactTable from './ContactTable';
+//import ContactTable from './ContactTable';
+import BasicContactTable from './BasicContactTable';
 import DoughnutChart from './DoughnutChart';
 import AllProvinceTable from './AllProvinceTable';
 
@@ -57,17 +58,16 @@ const Dashboard = () => {
      <div style={{
                 borderTop: "1px solid #e0e0e0",
                 marginTop: "1.5rem",
-               // marginBottom: "1.5rem"
+                marginBottom: "1.5rem"
               }} />
 
     <MDBContainer>
         <MDBRow>
-    <MDBCol md="6">
-        <ContactTable />
+        <MDBCol md="12">
+
+        <BasicContactTable />
     </MDBCol>
-    <MDBCol md="6">   
-        <DoughnutChart />
-    </MDBCol>
+  
     </MDBRow>
     </MDBContainer>
     // <AllProvinceTable />
@@ -78,3 +78,8 @@ const Dashboard = () => {
 }
 
 export default Dashboard;
+/****
+ *  <MDBCol md="6">   
+        <DoughnutChart />
+    </MDBCol>
+ */

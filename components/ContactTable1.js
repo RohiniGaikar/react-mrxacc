@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBDataTable } from 'mdbreact';
 
-const ContactTable = () => {
+const ContactTable1 = () => {
   const data = {
     columns: [
       {
@@ -639,11 +639,15 @@ const ContactTable = () => {
   };
 
   return (
-    <MDBDataTable
+    /*<MDBDataTable
       bordered
       hover
       data={data} width={600} height={300}
-    />
+    />*/
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    
   );
 }
 
