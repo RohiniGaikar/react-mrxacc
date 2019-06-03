@@ -84,7 +84,7 @@ const data = {
 };
 
 return (
-    <MDBTable scrollY>
+    <MDBTable scrollY display="block">
       <MDBTableHead columns={data.columns} />
       <MDBTableBody rows={data.rows} />
     </MDBTable>

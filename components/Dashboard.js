@@ -61,16 +61,33 @@ const Dashboard = () => {
                 marginBottom: "1.5rem"
               }} />
 
+    <MDBRow>
     <MDBContainer>
-        
         <MDBCol md="12">
-
         <BasicContactTable />
+        </MDBCol>
+      </MDBContainer>
+    </MDBRow>
+   <div style={{
+                borderTop: "1px solid #e0e0e0",
+                marginTop: "1.5rem",
+                marginBottom: "1.5rem"
+                
+              }} />
+    <MDBRow>
+    <MDBCol md="6"> 
+    </MDBCol> 
+     <MDBCol md="6">
+     <MDBRow>
+        <DoughnutChart />
+      </MDBRow>
+      <MDBRow>
+      <AllProvinceTable />
+      </MDBRow>
     </MDBCol>
-  
-    
-    </MDBContainer>
-    
+    </MDBRow>
+ 
+
         
    </div>
    
@@ -78,7 +95,7 @@ const Dashboard = () => {
 }
 
 export default Dashboard;
-/****<AllProvinceTable />
+/****
  *  <MDBCol md="6">   
         <DoughnutChart />
     </MDBCol>
