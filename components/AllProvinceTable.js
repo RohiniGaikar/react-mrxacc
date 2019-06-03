@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBTable, MDBTableBody, MDBTableHead } from 'mdbreact';
+import { MDBContainer, MDBTable, MDBTableBody, MDBTableHead } from 'mdbreact';
 
 const AllProvinceTable = props => {
 const data = {
@@ -84,10 +84,13 @@ const data = {
 };
 
 return (
-    <MDBTable scrollY display="block">
+  <MDBContainer>
+  <label className="mt-5"><strong>Top 10 Provinces</strong></label>
+    <MDBTable scrollY bordereddisplay="block">
       <MDBTableHead columns={data.columns} />
       <MDBTableBody rows={data.rows} />
     </MDBTable>
+    </MDBContainer>
   );
 };
 

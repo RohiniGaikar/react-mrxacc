@@ -27,14 +27,13 @@ state = {
 
 render() {
     return (
-      <div>
-      <label>Top 10 Provinces</label>
-      <InputBox />
-    <MDBContainer>
+      <MDBContainer>
       
-      <Doughnut data={this.state.dataDoughnut} options={{ responsive: true }} />
+      <label className="mt-5">Top 10 Provinces</label>
+        <InputBox />
+          <Doughnut data={this.state.dataDoughnut} options={{ responsive: true }} />
     </MDBContainer>
-    </
+    
     );
   }
 }
