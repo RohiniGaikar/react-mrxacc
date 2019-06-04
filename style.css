@@ -9,6 +9,42 @@ overflow: auto;
 .table-wrapper-scroll-y {
 display: block;
 }
+
+@media (max-width: 1199.98px) {
+  .sidebar-fixed {
+    display: none;
+  }
+  .flexible-content {
+    padding-left: 0;
+  }
+  .flexible-navbar {
+    padding-left: 10px;
+  }
+
+  #content{
+    margin-left: 0px;
+  }
+
+  .page-footer{
+    margin-left: 0px;
+  }
+  
+  .card.cascading-admin-card {
+    margin-top: 2.5rem;
+  } 
+}
+
+@media (max-width: 576px) { 
+  .card.cascading-admin-card {
+    margin-top: 2.5rem;
+  }
+
+  #breadcrumb{
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
 /*@media (max-width: 767px) {
     .column {
         width: 100%;

@@ -12,6 +12,7 @@ import RegionRecords from './RegionRecords';
 import BasicContactTable from './BasicContactTable';
 import DoughnutChart from './DoughnutChart';
 import AllProvinceTable from './AllProvinceTable';
+import CanadaHeatMap from './CanadaHeatMap';
 
 const Dashboard = () => {
   return (
@@ -83,7 +84,8 @@ const Dashboard = () => {
                 
               }} />
     <MDBRow>
-    <MDBCol md="7"> 
+    <MDBCol md="7">
+    <CanadaHeatMap /> 
     </MDBCol> 
     <div style={{
                 borderLeft: "1px solid #e0e0e0",
@@ -104,6 +106,7 @@ const Dashboard = () => {
       <MDBRow>
       <AllProvinceTable />
       </MDBRow>
+
     </MDBCol>
 
     </MDBRow>
@@ -114,6 +117,7 @@ const Dashboard = () => {
                 
               }}>
               </div>
+
 
         
    </div>
