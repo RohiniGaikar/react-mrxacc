@@ -4,16 +4,19 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.8.2",
+    "@syncfusion/ej2-file-utils": "^17.1.47",
+    "@syncfusion/ej2-maps": "17.1.50",
+    "@syncfusion/ej2-react-maps": "17.1.50",
     "bootstrap-css-only": "4.3.1",
     "chart.js": "2.8.0",
     "mdbreact": "4.15.0",
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-chartjs-2": "2.7.6",
-    "react-component-queries": "^2.3.0",
+    "react-component-queries": "2.3.0",
     "react-dom": "16.8.6",
     "react-router-dom": "5.0.0",
-    "react-sizeme": "^2.0.0"
+    "react-sizeme": "2.6.7"
   },
   "scripts": {
     "start": "react-scripts start",
