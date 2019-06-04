@@ -14,6 +14,7 @@ import DoughnutChart from './DoughnutChart';
 import AllProvinceTable from './AllProvinceTable';
 import CanadaHeatMap from './CanadaHeatMap';
 
+
 const Dashboard = () => {
   return (
     <div style={{
