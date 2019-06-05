@@ -1,7 +1,6 @@
- 
- import React, { Component } from 'react';
+import React, { Component } from 'react';
 import Datamap from 'datamaps/dist/datamaps.world.min.js';
-import  d3 from 'd3';
+import * as d3 from 'd3';
 //import scale from 'd3';
 import CanadaJson from './Canada.topo.json';
 
@@ -21,8 +20,8 @@ class ChoroplethMap extends Component {
 
         // create color palette function
         // color can be whatever you wish
-        let paletteScale = d3.scale.linear()
-            .domain([minValue, maxValue])
+       let paletteScale = d3.scaleLinear()
+          .domain([minValue, maxValue])
             .range(["#EFEFFF", "#02386F"]); // blue color
 
         // fill dataset in appropriate format
@@ -62,12 +61,12 @@ class ChoroplethMap extends Component {
             },
             data: dataset,
             setProjection: function (element) {
-                var projection = d3.geo.mercator()
+                var projection = d3.geoMercator()//changed .geo.mercator
                     .center([-106.3468, 68.1304]) // always in [East Latitude, North Longitude]
-                    .scale(200)
+                    .scale(20)
                     .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
 
-                var path = d3.geo.path().projection(projection);
+                var path = d3.geoPath().projection(projection);//changed .geo.path
                 return { path: path, projection: projection };
             }
         });
@@ -75,8 +74,8 @@ class ChoroplethMap extends Component {
     render() {
         return (
             <div id="cloropleth_map" style={{
-                height: "100%",
-                width: "100%",
+                height: "50%",
+                width: "50%",
             }}></div>
         );
     }

@@ -1,4 +1,11 @@
-<!-- Font Awesome -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <!-- Bootstrap core CSS -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -7,94 +14,16 @@
 <!-- MDBootstrap Datatables  -->
 <link href="css/addons/datatables.min.css" rel="stylesheet">
 
+</head>
+<body>
 <div id="root"></div>
-<!-- MDBootstrap Datatables  -->
-<script type="text/javascript" src="js/addons/datatables.min.js"></script>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-    <script src="http://d3js.org/topojson.v1.min.js"></script>
-    <script src="https://rawgit.com/Anujarya300/bubble_maps/master/data/geography-data/datamaps.none.js"></script>
-    <div id="india" style="height: 600px; width: 900px;"></div>
-    <script>
-        var bubble_map = new Datamap({
-            element: document.getElementById('india'),
-            scope: 'india',
-            geographyConfig: {
-                popupOnHover: true,
-                highlightOnHover: true,
-                borderColor: '#444',
-                borderWidth: 0.5,
-                dataUrl: 'https://rawgit.com/Anujarya300/bubble_maps/master/data/geography-data/india.topo.json'
-                //dataJson: topoJsonData
-            },
-            fills: {
-                'MAJOR': '#306596',
-                'MEDIUM': '#0fa0fa',
-                'MINOR': '#bada55',
-                defaultFill: '#dddddd'
-            },
-            data: {
-                'JH': { fillKey: 'MINOR' },
-                'MH': { fillKey: 'MINOR' }
-            },
-            setProjection: function (element) {
-                var projection = d3.geo.mercator()
-                    .center([78.9629, 23.5937]) // always in [East Latitude, North Longitude]
-                    .scale(1000);
-                var path = d3.geo.path().projection(projection);
-                return { path: path, projection: projection };
-            }
-        });
-        let bubbles = [
-            {
-                centered: "MH",
-                fillKey: "MAJOR",
-                radius: 20,
-                state: "Maharastra"
-            },
-            {
-                centered: "AP",
-                fillKey: "MAJOR",
-                radius: 22,
-                state: "Andhra Pradesh"
-            },
-            {
-                centered: "TN",
-                fillKey: "MAJOR",
-                radius: 16,
-                state: "Tamil Nadu"
-            },
-            {
-                centered: "WB",
-                fillKey: "MEDIUM",
-                radius: 15,
-                state: "West Bengal"
-            },
-            {
-                centered: "MP",
-                fillKey: "MEDIUM",
-                radius: 15,
-                state: "Madhya Pradesh"
-            },
-            {
-                centered: "UP",
-                fillKey: "MINOR",
-                radius: 8,
-                state: "Uttar Pradesh"
-            },
-            {
-                centered: "RJ",
-                fillKey: "MINOR",
-                radius: 7,
-                state: "Rajasthan"
-            }
-        ]
-        // // ISO ID code for city or <state></state>
-        setTimeout(() => { // only start drawing bubbles on the map when map has rendered completely.
-            bubble_map.bubbles(bubbles, {
-                popupTemplate: function (geo, data) {
-                    return `<div class="hoverinfo">city: ${data.state}, Slums: ${data.radius}%</div>`;
-                }
-            });
-        }, 1000);
-    </script>
+<script src="https://d3js.org/d3-array.v2.min.js"></script>
+<script src="https://d3js.org/d3-color.v1.min.js"></script>
+<script src="https://d3js.org/d3-format.v1.min.js"></script>
+<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+<script src="https://d3js.org/d3-time.v1.min.js"></script>
+<script src="https://d3js.org/d3-time-format.v2.min.js"></script>
+<script src="https://d3js.org/d3-scale.v3.min.js"></script>
+</body>
+
 
