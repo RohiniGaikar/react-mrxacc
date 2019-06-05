@@ -20,9 +20,13 @@ class ChoroplethMap extends Component {
 
         // create color palette function
         // color can be whatever you wish
-       let paletteScale = d3.scaleLinear()
+      let paletteScale = d3.scaleLinear()
           .domain([minValue, maxValue])
             .range(["#EFEFFF", "#02386F"]); // blue color
+
+      /*          var scale = d3.scaleLinear()
+                        .domain([d3.min(data), d3.max(data)])
+                        .range([100, 400]);*/
 
         // fill dataset in appropriate format
         this.props.data.forEach(function (item) { //
