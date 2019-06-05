@@ -1,26 +1,25 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
-import { MDBContainer } from "mdbreact";
-//import { Legend, DataLabel, MapsTooltip } from '@syncfusion/ej2-maps';
-//import {MapsComponent } from '@syncfusion/ej2-react-maps';
-//import { world_map } from 'world-map.ts';
+//import './style.css';
 
-import { MapsComponent, LayersDirective, LayerDirective, Inject } from '@syncfusion/ej2-react-maps';
+import ChoroplethMap from './ChoroplethMap';
 
-const CanadaHeatMap = () => {
-  return(
-    
-            <label className="mt-5" style={{
-              marginLeft:"50px"
-            }}
-            >Canada Heat Map</label>
-            
-
-            
-    
-  );
+class CanadaHeatMap extends Component {
+  state = {
+    data: [
+      ["MB", 75], ["SK", 43], ["AB", 50], ["BC", 88], ["NU", 21], ["NT", 43],
+      ["YT", 21], ["ON", 19], ["QC", 60], ["NB", 4], ["NS", 44], ["NF", 38],
+      ["PE", 67]],
+  }
+  render() {
+    return (
+      <div style={{
+        height:"100vh",
+        width: "100vw"
+      }}>
+        <ChoroplethMap data={this.state.data}/>
+      </div>
+    );
+  }
 }
+
 export default CanadaHeatMap;
-/*<MapsComponent id="element">
-            <Inject services={[DataLabel, Legend, MapsTooltip]}/>
-            </MapsComponent>*/
