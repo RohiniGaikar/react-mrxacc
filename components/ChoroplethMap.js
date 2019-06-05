@@ -1,7 +1,7 @@
  
  import React, { Component } from 'react';
 import Datamap from 'datamaps/dist/datamaps.world.min.js';
-import d3 from 'd3';
+import  d3 from 'd3';
 //import scale from 'd3';
 import CanadaJson from './Canada.topo.json';
 
