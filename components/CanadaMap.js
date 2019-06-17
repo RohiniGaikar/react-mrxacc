@@ -7,7 +7,7 @@ const CanadaMap = () => {
     <div class="card">
     <h5 class="card-title">
     <p>
-    <a>Canada Heat Map</a></h5>
+    <a>Canada Heat Map</a></p></
     
   <img class="card-img-top" src="https://cdn.jsdelivr.net/gh/RohiniGaikar/react-mrxacc@master/components/canadaheatmap.png" alt="Card image cap" />
 
